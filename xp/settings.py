@@ -16,7 +16,7 @@ DATABASES = {
         'NAME': 'forum',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '123456',
         'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '3306',                      # Set to empty string for default.
     }
@@ -175,6 +175,7 @@ LOGGING = {
     }
 }
 
+'''
 CACHES = { # memcached缓存设置
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
@@ -183,6 +184,7 @@ CACHES = { # memcached缓存设置
 }
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache' # 使用memcached存储session
+'''
 
 # 自定义User类
 AUTH_USER_MODEL = 'forum.ForumUser'

@@ -44,7 +44,7 @@ class NodeManager(models.Manager):
     '''
     def get_all_hot_nodes(self):
         query = self.get_query_set().filter(topic__reply_count__gt=0).order_by('-topic__reply_count')
-        query.query.group_by = ['id'] # Django使用GROUP BY方法
+        query.group_by = ['id'] # Django使用GROUP BY方法
         return query
 
 

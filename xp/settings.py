@@ -196,11 +196,11 @@ AUTHENTICATION_BACKENDS = ('forum.backends.EmailAuthBackend',)
 LOGIN_URL = '/login/'
 
 # 发送邮件设置
-EMAIL_HOST = 'smtp.qq.com'
-EMAIL_PORT = 25
-EMAIL_HOST_USER= '*********'
-EMAIL_HOST_PASSWORD= '******'
-DEFAULT_FROM_EMAIL = '*********@qq.com'
+# EMAIL_HOST = 'smtp.qq.com'
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER= '*********'
+# EMAIL_HOST_PASSWORD= '******'
+# DEFAULT_FROM_EMAIL = '*********@qq.com'
 
 ## send email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

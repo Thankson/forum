@@ -202,5 +202,13 @@ EMAIL_HOST_USER= '*********'
 EMAIL_HOST_PASSWORD= '******'
 DEFAULT_FROM_EMAIL = '*********@qq.com'
 
+## send email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER= '[myname]616@163.com'
+EMAIL_HOST_PASSWORD= 'wen616'
+DEFAULT_FROM_EMAIL = '[myname]616@163.com'
+
 # 注册用户保留关键字，非Django设置
 RESERVED = ["user", "topic", "home", "setting", "forgot", "login", "logout", "register", "admin"]
